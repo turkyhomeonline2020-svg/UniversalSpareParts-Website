@@ -18,3 +18,36 @@
   footer{display:flex;flex-direction:column;align-items:center;text-align:center}
   .footer-brand{flex-wrap:wrap;justify-content:center}
 }
+
+/* Final mobile layout correction */
+@media(max-width:700px){
+  #install,#faq{
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    float:none!important;
+    clear:both!important;
+    padding:35px 18px!important;
+  }
+  #install .steps{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:14px!important;
+  }
+  #install .steps article{
+    width:100%!important;
+    min-height:0!important;
+    height:auto!important;
+  }
+  #faq .faqs{
+    width:100%!important;
+    max-width:100%!important;
+  }
+  .notice{
+    color:#142644!important;
+  }
+  .notice *{
+    color:#334155!important;
+  }
+}
